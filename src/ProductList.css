@@ -39,7 +39,20 @@ body {
    
 }
 
+
 /* Product Grid */
+
+.category{
+    
+    text-align: center;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .product-grid {
     display:flex;
     flex-direction: column;
@@ -83,7 +96,13 @@ body {
 
 .product-title {
     font-weight: bold;
+    font-size: large;
     margin-bottom: 10px;
+}
+
+.product-description{
+    margin-bottom: 10px;
+    font-size: medium;
 }
 
 .product-price {
@@ -94,7 +113,7 @@ body {
 
 .product-image {
     max-width: 100%;
-    height: 200px; /* Adjust height for better consistency */
+    height: 400px; /* Adjust height for better consistency */
 }
 
 .product-button {
@@ -106,6 +125,11 @@ body {
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
 }
+
+.product-button.in-cart {
+    background-color: rgb(71, 71, 71); /* or any color you prefer */
+    color: white; /* change text color if needed */
+  }
 
 .product-button:hover {
     background-color: #c0392b;
